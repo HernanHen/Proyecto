@@ -1,0 +1,38 @@
+
+
+/* Titulos y textos */
+
+h2 {
+    text-align: center;
+    padding: 20px;
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    font-size: $text1;
+    color: white;
+    border-radius: 4px;
+}
+
+.title2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: $text3;
+    margin: 20px;
+}
+
+.titulos {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: $text1;
+    color: $title-c; 
+}
+
+.texto {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: $text2;
+    color: $tx-c;
+    text-align: center;
+}

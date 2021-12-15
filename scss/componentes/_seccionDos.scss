@@ -1,0 +1,35 @@
+/* seccionDos */
+
+.section2 {
+    padding: 200px 0px;
+    display: grid;
+    grid-template-areas: 
+    'h2titulo img-grid img-grid'
+    'lorem img-grid img-grid'
+    'lorem2 img-grid img-grid';
+    gap: 10px; 
+    @media screen and (max-width:900px) { 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    } .izquierda {
+        grid-area: h2titulo;
+        border:map-get($standard, border-standard);
+    } .img-derecha { 
+        grid-area: img-grid;
+        border:map-get($standard, border-standard);
+    } .izquierda-2 {
+        grid-area: lorem;
+        border:map-get($standard, border-standard);
+    } .izquierda-3 {
+        grid-area: lorem2;
+        border:map-get($standard, border-standard);
+    }
+}
+
+.imgg {
+    border-radius: 20%;
+    width: $img-width;
+    
+}
+

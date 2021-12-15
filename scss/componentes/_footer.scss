@@ -1,0 +1,29 @@
+/* footer */
+.fcontenedor {
+    padding: 20px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pie {
+    padding: 20px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img4 {
+    padding: 20px 10px 0 10px;
+    width: $img-width;
+    border-radius: 30px;
+}
+
+.image1 {
+    padding: 20px 20px;
+    width: $img-width;
+    border-radius: 10px;
+    @media screen and (max-width:1250px) {
+        width: 110%;
+    }
+}
+

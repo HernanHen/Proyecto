@@ -1,0 +1,10 @@
+/* seccionTres */
+.section3 { 
+    padding: 20px 0 0 0;
+    margin: 40px auto;
+    @extend %flex;
+    .img {
+        width: $img-width;
+    } 
+}
+

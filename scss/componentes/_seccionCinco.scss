@@ -1,0 +1,12 @@
+/* seccionCinco */
+
+.section5 {
+    padding: 20px 0px;
+    @extend %flex;
+    align-items: center;
+    .img2, .img3 {
+        width: $img3-width;
+    }
+}
+
+

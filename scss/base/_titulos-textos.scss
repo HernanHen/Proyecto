@@ -36,3 +36,17 @@ h2 {
     color: $tx-c;
     text-align: center;
 }
+
+.seccion-titulos {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    color: $title-c; 
+}
+
+.seccion-texto {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: $tx-c;
+}

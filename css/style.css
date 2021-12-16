@@ -51,6 +51,20 @@ h2 {
   text-align: center;
 }
 
+.seccion-titulos {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  color: plum;
+}
+
+.seccion-texto {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #dc79f5;
+}
+
 /* header */
 .homeHeader {
   padding: 10px;
@@ -159,38 +173,7 @@ ul li:hover ul {
 }
 /* seccionDos */
 .section2 {
-  padding: 200px 0px;
-  display: grid;
-  grid-template-areas: "h2titulo img-grid img-grid" "lorem img-grid img-grid" "lorem2 img-grid img-grid";
-  gap: 10px;
-}
-@media screen and (max-width: 900px) {
-  .section2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-.section2 .izquierda {
-  grid-area: h2titulo;
-  border: 3px solid plum;
-}
-.section2 .img-derecha {
-  grid-area: img-grid;
-  border: 3px solid plum;
-}
-.section2 .izquierda-2 {
-  grid-area: lorem;
-  border: 3px solid plum;
-}
-.section2 .izquierda-3 {
-  grid-area: lorem2;
-  border: 3px solid plum;
-}
-
-.imgg {
-  border-radius: 20%;
-  width: 100%;
+  padding: 20px 0px;
 }
 
 /* seccionTres */

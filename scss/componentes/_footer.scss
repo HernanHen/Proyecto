@@ -3,7 +3,6 @@
     padding: 20px 0 0 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
 }
 
 .pie {
@@ -12,18 +11,28 @@
     justify-content: space-between;
 }
 
-.img4 {
-    padding: 20px 10px 0 10px;
-    width: $img-width;
-    border-radius: 30px;
-}
-
-.image1 {
-    padding: 20px 20px;
-    width: $img-width;
+.imageUno{
+    padding: 0px 10px;
     border-radius: 10px;
-    @media screen and (max-width:1250px) {
-        width: 110%;
-    }
+    position: fixed;
+    top: 47%;
+    right: 0%;
 }
 
+.imageDos {
+    padding: 0px 10px;
+    border-radius: 10px;
+    position: fixed;
+    top: 55%;
+    right: 0%;
+}
+
+.imageTres {
+    padding: 0px 10px;
+    border-radius: 10px;
+    position: fixed;
+    top: 39%;
+    right: 0%;
+}
+
+/* fin del footer */

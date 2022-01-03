@@ -12,7 +12,10 @@ html {
 }
 
 body {
-  background-image: url("img/body/fondobody.jpg");
+  background-image: url("/css/img/body/2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* Titulos y textos */
@@ -122,14 +125,14 @@ ul li:hover ul {
   }
 }
 /* extend */
-.section5, .section3, .section1 {
+.sectionTres, .sectionUno {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
 /* seccionUno */
-.section1 .imghome {
+.sectionUno .imghome {
   width: 100%;
   margin: 0 10px 0 10px;
 }
@@ -172,34 +175,42 @@ ul li:hover ul {
   }
 }
 /* seccionDos */
-.section2 {
+.sectionDos {
   padding: 20px 0px;
 }
 
 /* seccionTres */
-.section3 {
+.sectionTres {
   padding: 20px 0 0 0;
   margin: 40px auto;
 }
-.section3 .img {
+.sectionTres .img {
   width: 100%;
+  border: blueviolet 2px solid;
+  background-color: #521796;
 }
 
+/* fin de seccionTres */
 /* seccionCuatro */
-.section4 {
+.sectionCuatro {
   padding: 40px 0px;
 }
-.section4 .img2 {
+.sectionCuatro .img2 {
   width: 50%;
 }
 
+/* fin de seccionCuatro */
 /* seccionCinco */
-.section5 {
+.sectionCinco {
   padding: 20px 0px;
   align-items: center;
 }
-.section5 .img2, .section5 .img3 {
+.sectionCinco .img2, .sectionCinco .img3 {
   width: 20%;
+}
+
+.imgColaborador {
+  width: 100%;
 }
 
 /* footer */
@@ -207,7 +218,6 @@ ul li:hover ul {
   padding: 20px 0 0 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .pie {
@@ -216,21 +226,30 @@ ul li:hover ul {
   justify-content: space-between;
 }
 
-.img4 {
-  padding: 20px 10px 0 10px;
-  width: 100%;
-  border-radius: 30px;
+.imageUno {
+  padding: 0px 10px;
+  border-radius: 10px;
+  position: fixed;
+  top: 47%;
+  right: 0%;
 }
 
-.image1 {
-  padding: 20px 20px;
-  width: 100%;
+.imageDos {
+  padding: 0px 10px;
   border-radius: 10px;
+  position: fixed;
+  top: 55%;
+  right: 0%;
 }
-@media screen and (max-width: 1250px) {
-  .image1 {
-    width: 110%;
-  }
+
+.imageTres {
+  padding: 0px 10px;
+  border-radius: 10px;
+  position: fixed;
+  top: 39%;
+  right: 0%;
 }
+
+/* fin del footer */
 
 /*# sourceMappingURL=style.css.map */

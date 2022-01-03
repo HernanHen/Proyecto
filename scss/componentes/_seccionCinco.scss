@@ -1,12 +1,13 @@
 /* seccionCinco */
 
-.section5 {
+.sectionCinco {
     padding: 20px 0px;
-    @extend %flex;
     align-items: center;
     .img2, .img3 {
         width: $img3-width;
     }
 }
 
-
+.imgColaborador {
+    width: $img-width;
+}

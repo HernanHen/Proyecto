@@ -1,10 +1,13 @@
 /* seccionTres */
-.section3 { 
+.sectionTres { 
     padding: 20px 0 0 0;
     margin: 40px auto;
     @extend %flex;
     .img {
         width: $img-width;
+        border: blueviolet 2px solid;
+        background-color: #521796;
     } 
 }
 
+/* fin de seccionTres */

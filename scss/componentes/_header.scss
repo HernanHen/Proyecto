@@ -33,6 +33,7 @@ li {
     width: 25%;
     position: relative;
     font-size: 14px;
+    
 }
 
 ul ul {
@@ -46,7 +47,11 @@ ul ul li {
 
 ul li:hover ul {
     display: block;
-
+    border-radius: 800px;
+    position: absolute;
+    
+    
+    
 }
 
 @media only screen and (max-width: 750px) {
@@ -54,3 +59,5 @@ ul li:hover ul {
         display: none;
     }
 }
+
+/* fin del header */

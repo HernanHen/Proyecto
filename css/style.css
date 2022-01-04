@@ -12,10 +12,7 @@ html {
 }
 
 body {
-  background-image: url("/css/img/body/2.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: black;
 }
 
 /* Titulos y textos */
@@ -26,31 +23,33 @@ h2 {
 
 .title {
   font-family: "Roboto", sans-serif;
-  font-size: 40px;
+  font-size: 60px;
   color: white;
   border-radius: 4px;
 }
 
-.title2 {
+.menuTexto {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  color: white;
-  font-size: 20px;
-  margin: 20px;
+  color: black;
+  font-size: 22px;
+  margin: 10px;
 }
 
 .titulos {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
-  font-size: 40px;
+  font-size: 60px;
   color: plum;
+  text-shadow: 2px 2px #FFFFFF;
+  text-decoration: none;
 }
 
 .texto {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 30px;
-  color: #dc79f5;
+  color: #ffffff;
   text-align: center;
 }
 
@@ -58,14 +57,14 @@ h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-size: 30px;
-  color: plum;
+  color: #ffffff;
 }
 
 .seccion-texto {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 20px;
-  color: #dc79f5;
+  color: #ffffff;
 }
 
 /* header */
@@ -117,6 +116,8 @@ ul ul li {
 
 ul li:hover ul {
   display: block;
+  border-radius: 800px;
+  position: absolute;
 }
 
 @media only screen and (max-width: 750px) {
@@ -124,6 +125,7 @@ ul li:hover ul {
     display: none;
   }
 }
+/* fin del header */
 /* extend */
 .sectionTres, .sectionUno {
   display: flex;
@@ -132,57 +134,54 @@ ul li:hover ul {
 }
 
 /* seccionUno */
+.sectionUno {
+  padding: 15px 0px;
+  margin: 0px 0px 20px 0px;
+  background-color: black;
+}
 .sectionUno .imghome {
   width: 100%;
   margin: 0 10px 0 10px;
+  box-shadow: 0 1px 4px rgba(194, 50, 187, 0.8), -23px 0 20px -23px rgba(194, 50, 187, 0.8), 23px 0 20px -23px rgba(194, 50, 187, 0.8), inset 0 0 40px rgba(194, 50, 187, 0.8);
+  border-radius: 20px;
 }
 
-.molde {
-  background-color: plum;
-  border-radius: 30px;
-  padding: 10px;
-  margin: 50px auto;
-  transition: all 3s;
-  text-decoration: none;
-}
-.molde:hover {
-  text-shadow: 4px 3px #070606;
-  color: plum;
-  background-image: linear-gradient(to left, #BDBBBE 0%, #9D9EA3 100%), radial-gradient(88% 271%, rgba(255, 255, 255, 0.25) 0%, rgba(254, 254, 254, 0.25) 1%, rgba(0, 0, 0, 0.25) 100%), radial-gradient(50% 100%, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
-  background-blend-mode: normal, lighten, soft-light;
-  animation: changeColor 2s;
-  -webkit-transform: scale(1.4);
-  -o-transform: scale(1.4);
-  -moz-transform: scale(1.4);
-  transform: scale(1.4);
-}
-
-@keyframes changeColor {
-  10% {
-    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
-  }
-  25% {
-    background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
-  }
-  50% {
-    background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
-  }
-  75% {
-    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
-  }
-  100% {
-    background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
-  }
-}
 /* seccionDos */
 .sectionDos {
   padding: 20px 0px;
+  margin: 20px auto;
+  background: black;
+}
+.sectionDos .shadowChori {
+  box-shadow: 0 1px 4px rgba(194, 50, 187, 0.8), -13px 0 10px -13px rgba(194, 50, 187, 0.8), 13px 0 10px -13px rgba(194, 50, 187, 0.8), inset 0 0 20px rgba(194, 50, 187, 0.8);
+  border-radius: 30px;
+}
+
+.btnChori {
+  font-family: "trebuchet ms";
+  color: #FFFFF5;
+  font-size: 14px;
+  text-decoration: none;
+  text-shadow: 1px 1px 0px #DEC1C9;
+  box-shadow: 1px 1px 1px #6B2670;
+  padding: 10px 25px;
+  border-radius: 17px;
+  border: 2px solid #5C5C5C;
+  background: #180619;
+  background: linear-gradient(to top, #180619, #A1A1A1);
+}
+.btnChori:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+  background: #380F24;
+  background: linear-gradient(to top, #380F24, #DD3C8D);
 }
 
 /* seccionTres */
 .sectionTres {
   padding: 20px 0 0 0;
-  margin: 40px auto;
+  margin: 20px auto;
+  background-color: black;
 }
 .sectionTres .img {
   width: 100%;
@@ -194,25 +193,48 @@ ul li:hover ul {
 /* seccionCuatro */
 .sectionCuatro {
   padding: 40px 0px;
+  margin: 20px auto;
+  background: black;
 }
-.sectionCuatro .img2 {
-  width: 50%;
+.sectionCuatro .shadowChori {
+  box-shadow: 0 1px 4px rgba(194, 50, 187, 0.8), -23px 0 20px -23px rgba(194, 50, 187, 0.8), 23px 0 20px -23px rgba(194, 50, 187, 0.8), inset 0 0 40px rgba(194, 50, 187, 0.8);
+  border-radius: 50px;
 }
 
 /* fin de seccionCuatro */
 /* seccionCinco */
 .sectionCinco {
-  padding: 20px 0px;
+  padding: 50px 0px;
+  margin: 20px auto;
+  background-color: black;
   align-items: center;
 }
-.sectionCinco .img2, .sectionCinco .img3 {
-  width: 20%;
+.sectionCinco .shadowChori {
+  box-shadow: 0 1px 4px rgba(251, 250, 251, 0.8), -23px 0 20px -23px rgba(251, 250, 251, 0.8), 23px 0 20px -23px rgba(251, 250, 251, 0.8), inset 0 0 40px rgba(251, 250, 251, 0.8);
+  border-radius: 50px;
 }
 
-.imgColaborador {
-  width: 100%;
+.btnChori {
+  font-family: "Roboto", sans-serif;
+  color: #FFFFF5;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 10px 25px;
+  border-radius: 17px;
+  border: 2px solid #5C5C5C;
+  background: #180619;
+  background: linear-gradient(to top, #180619, #A1A1A1);
+}
+.btnChori:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+  background: #380F24;
+  background: linear-gradient(to top, #380F24, #DD3C8D);
+  text-shadow: 1px 1px 0px #DEC1C9;
+  box-shadow: 1px 1px 1px #6B2670;
 }
 
+/* fin de seccionCinco */
 /* footer */
 .fcontenedor {
   padding: 20px 0 0 0;
@@ -230,7 +252,7 @@ ul li:hover ul {
   padding: 0px 10px;
   border-radius: 10px;
   position: fixed;
-  top: 47%;
+  top: 45%;
   right: 0%;
 }
 
@@ -238,7 +260,7 @@ ul li:hover ul {
   padding: 0px 10px;
   border-radius: 10px;
   position: fixed;
-  top: 55%;
+  top: 52%;
   right: 0%;
 }
 
@@ -246,7 +268,7 @@ ul li:hover ul {
   padding: 0px 10px;
   border-radius: 10px;
   position: fixed;
-  top: 39%;
+  top: 38%;
   right: 0%;
 }
 

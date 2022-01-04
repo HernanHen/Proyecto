@@ -14,12 +14,12 @@ h2 {
     border-radius: 4px;
 }
 
-.title2 {
+.menuTexto {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    color: white;
+    color: $menu-texto;
     font-size: $text3;
-    margin: 20px;
+    margin: 10px;
 }
 
 .titulos {
@@ -27,6 +27,8 @@ h2 {
     font-weight: 900;
     font-size: $text1;
     color: $title-c; 
+    text-shadow: 2px 2px #FFFFFF;
+    text-decoration: none;
 }
 
 .texto {
@@ -41,7 +43,8 @@ h2 {
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     font-size: 30px;
-    color: $title-c; 
+    color: $sec-titu;
+    
 }
 
 .seccion-texto {

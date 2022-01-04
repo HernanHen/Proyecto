@@ -1,13 +1,38 @@
 /* seccionCinco */
 
 .sectionCinco {
-    padding: 20px 0px;
+    padding: 50px 0px;
+    margin: 20px auto;
+    background-color: black;
     align-items: center;
-    .img2, .img3 {
-        width: $img3-width;
+    .shadowChori {
+        box-shadow: 0 1px 4px rgba(251, 250, 251, 0.8),
+        -23px 0 20px -23px rgba(251, 250, 251, 0.8),
+        23px 0 20px -23px rgba(251, 250, 251, 0.8),
+        inset 0 0 40px rgba(251, 250, 251, 0.8);
+        border-radius: 50px;
     }
 }
 
-.imgColaborador {
-    width: $img-width;
+
+.btnChori {
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFF5;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 10px 25px;
+    border-radius: 17px;
+    border: 2px solid #5C5C5C;
+    background: #180619;
+    background: linear-gradient(to top, #180619, #A1A1A1);
+        &:hover {
+            color: #FFFFFF;
+            text-decoration: none;
+            background: #380F24;
+            background: linear-gradient(to top, #380F24, #DD3C8D);
+            text-shadow: 1px 1px 0px #DEC1C9;
+            box-shadow: 1px 1px 1px #6B2670;
+        }
 }
+
+/* fin de seccionCinco */

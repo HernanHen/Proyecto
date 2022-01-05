@@ -13,28 +13,19 @@
     box-shadow: 0 1px 4px rgba(194, 50, 187, 0.8),
     -13px 0 10px -13px rgba(194, 50, 187, 0.8),
     13px 0 10px -13px rgba(194, 50, 187, 0.8),
-    inset 0 0 20px rgba(194, 50, 187, 0.8);
+    inset 0 0 50px rgb(194, 50, 187, 0.8);
     border-radius: 30px;
-    background-color: rgba(194, 50, 187, 0.6);
+    background-color: rgba(122, 9, 101, 0.411);
 }
 
+
+/* seccionCuatro */
 .choriContenedor {
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(17, 16, 16, 0.329);
+    @extend %shadowSection;
     border-radius: 10px;
-}
-
-.titleChori {
-    flex-wrap: wrap;
-    color: black;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    font-size: 32px;
-}
-
-.textChori {
-    color: black;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    font-size: 18px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
 }
 /* fin de seccionCuatro */

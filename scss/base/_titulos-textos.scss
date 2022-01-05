@@ -7,13 +7,7 @@ h2 {
     padding: 20px;
 }
 
-.title {
-    font-family: 'Roboto', sans-serif;
-    font-size: $text1;
-    color: white;
-    border-radius: 4px;
-}
-
+/* menu desplegable */
 .menuTexto {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -29,6 +23,7 @@ h2 {
     }
 }
 
+/* encabezados */
 .titulos {
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
@@ -36,27 +31,60 @@ h2 {
     color: $title-c; 
     text-shadow: 2px 2px #FFFFFF;
     text-decoration: none;
+    @media (max-width: 576px) {
+        font-size: 40px;
+    }
 }
 
-.texto {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: $text2;
-    color: $tx-c;
-    text-align: center;
-}
-
+/* texto de las cards */
 .seccionTitulos {
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
-    font-size: 30px;
+    font-size: $text2;
     color: $sec-titu;
-    
+    @media (max-width: 576px) {
+        font-size: 25px;
+    }
 }
 
 .seccionTexto {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: $text3;
     color: $tx-c;
+    @media (max-width: 576px) {
+        font-size: 16px;
+    }
 }
+
+/* Texto del carousel */
+.titleChori {
+    flex-wrap: wrap;
+    color: white;
+    text-shadow: #FFE133 1px 3px 25px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 32px;
+    @media (max-width: 576px) {
+        font-size: 24px;
+    }
+    
+}
+
+.textChori {
+    color: white;
+    text-shadow: #FFE133 1px 3px 25px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    @media (max-width: 576px) {
+        font-size: 16px;
+    }
+}
+
+/* footer texto */
+.choriTexto {
+    color: #ffffff;
+    font-size: 16px;
+}
+/* fin textos y titulos */

@@ -24,8 +24,8 @@
     <!-- Header -->
     <header class="homeHeader">
         <nav>
-            <ul class="Transform">
-                <li class="Transform-hover"><img src="imagenes/header/menu.png" alt="logo modificado" class="imgHeader">
+            <ul class="d-none d-xxl-block d-xl-block">
+                <li><img src="imagenes/header/menu.png" alt="logo modificado" class="imgHeader">
                     <ul>
                         <li><a class="menuTexto" href="#">Inicio</a></li>
                         <li><a class="menuTexto" href="#Contenidos">Contenidos</a></li>
@@ -36,21 +36,21 @@
                 </li>
             </ul>
         </nav>
-    </header>
+    </header> 
     
     <!-- navbar en pantallas mas pequeñas -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top d-xl-none d-lg-none d-md-none">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top d-xxl-none d-xl-none">
         <a class="navbar-brand btn btn-outline-secondary" href="#"><img src="imagenes/header/48x48.svg" width="50" height="40" alt="logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-            <a class="nav-link border border-white text-center" href="#">Inicio</a>
-            <a class="nav-link border border-white text-center" href="#Contenidos">Contenidos</a>
-            <a class="nav-link border border-white text-center" href="#Cabecoins">Cabecoins</a>
-            <a class="nav-link border border-white text-center" href="#Apetites">Apetites</a>
-            <a class="nav-link border border-white text-center" href="#Colaborades" tabindex="-1" aria-disabled="true">Colaborades</a>
+            <a class="nav-link text-center" href="#">Inicio</a>
+            <a class="nav-link text-center" href="#Contenidos">Contenidos</a>
+            <a class="nav-link text-center" href="#Cabecoins">Cabecoins</a>
+            <a class="nav-link text-center" href="#Apetites">Apetites</a>
+            <a class="nav-link text-center" href="#Colaborades" tabindex="-1" aria-disabled="true">Colaborades</a>
             </div>
         </div>
     </nav>
@@ -59,7 +59,7 @@
     <!-- seccion 1 -->
     <main class="sectionUno container">
         <h1 class="titulos">CabechoriOK</h1>
-        <section class="sectionU">
+        <section class="sectionContenido">
             <img src="imagenes/body/portadaprueba2.png" alt="info del inicio" class="imgHome">
             <a href="https://www.twitch.tv/cabechoriok" target="_blank" class="btnChori choriPoss">Twitch</a>
         </section>
@@ -71,9 +71,8 @@
     <section class="sectionDos container" id="Contenidos">
         <h2 class="titulos">Contenidos</h2>
         <div class="row justify-content-around">
-            <div class="card text-center  bg-dark col-5 shadowChori" style="width: 22rem;" data-aos="fade-down"
-            data-aos-easing="linear"
-            data-aos-duration="1500">
+            <div class="card text-center  bg-dark col-5 shadowChori" style="width: 22rem;" data-aos="fade-up"
+            data-aos-duration="3000">
                 <div class="card-body">
                     <h5 class="card-title seccionTitulos">Streamvistas</h5>
                     <iframe width="100%" height="350" src="https://www.youtube.com/embed/videoseries?list=PLI3EqcSmjCVWx2ETfcFRYWRcxtfJtjQKw&autoplay=1&loop=1&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -148,54 +147,42 @@
     <!-- fin de la seccion 3 -->
 
     <!-- seccion4 -->
-
-    
-
     <section class="sectionCuatro container" id="Apetites">
         <h2 class="titulos">Apetites</h2>
         <div class="row">
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 </div>
                 <div class="carousel-inner cabeChori">
-                  <div class="carousel-item active">
-                    <img src="imagenes/body/3_1sn.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-md-block choriContenedor">
-                      <h5 class="titleChori">Apetites</h5>
-                      <p class="textChori">Les Apetites son deliciosos seres que habitan el Choriverso en toda su extensión. Consegui tu propio Apetite inspirade en tu comida favorita.</p>
+                <div class="carousel-item active">
+                    <img src="imagenes/body/3_1as.png" class="d-block w-100" alt="Que son las Apetite">
+                    <div class="carousel-caption d-flex d-md-block choriContenedor">
+                        <h5 class="titleChori text-center">Apetites del Choriverso</h5>
+                        <p class="textChori d-none d-sm-block">Les Apetites son deliciosos seres que habitan el Choriverso en toda su extensión. Consegui tu propio Apetite inspirade en tu comida favorita.</p>
                     </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="imagenes/body/3_2sn.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-md-block choriContenedor">
-                      <h5 class="titleChori">Como consigo Apetites?</h5>
-                      <p class="textChori">Les Apetites nace de Launcheggras y estas eclosionan 
-                        si se abren con Shaves Chori.
-                        15 Shaves Shori + 1 Launcheggra</p>
                     </div>
-                  </div>
+                    <div class="carousel-item">
+                        <img src="imagenes/body/3_2as.png" class="d-block w-100" alt="Como ganar Apetite">
+                        <div class="carousel-caption d-md-block choriContenedor">
+                            <h5 class="titleChori text-center">Como consigo Apetites?</h5>
+                            <p class="textChori d-none d-sm-block">Les Apetites nace de Launcheggras y estas eclosionan 
+                            si se abren con Shaves Chori.
+                            15 Shaves Shori + 1 Launcheggra</p>
+                        </div>
+                    </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
+                    <span class="carousel-control-next-icon dark" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
                 </button>
-              </div>
-    
+            </div>
         </div>
-
-
-
-
-
-
-
-
     </section>
 
     <!-- fin de la seccion 4 -->
@@ -213,18 +200,18 @@
                     <a href="https://www.twitch.tv/xGilbert" target="_blank"  class="btnChori">Ver twitch</a>
                 </div>
             </div>
-            <div class="card text-center bg-dark col-2 choriShadouw" style="width: 18rem;" data-aos="fade-down"
-            data-aos-easing="linear"
-            data-aos-duration="1500">
+            <div class="card text-center bg-dark col-2 choriShadouw" style="width: 18rem;" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
                 <div class="card-body">
                     <h5 class="card-title seccionTitulos">Pikawaii</h5>
                     <img src="imagenes/body/5_2n.png" class="imgColaborador" alt="Pikawaii">
                     <a href="https://www.twitch.tv/Pikawaii" target="_blank"  class="btnChori">Ver twitch</a>
                 </div>
             </div>
-            <div class="card text-center bg-dark col-2 choriShadouw" style="width: 18rem;" data-aos="fade-down"
-            data-aos-easing="linear"
-            data-aos-duration="1500">
+            <div class="card text-center bg-dark col-2 choriShadouw" style="width: 18rem;" data-aos="flip-right"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
                 <div class="card-body">
                     <h5 class="card-titles seccionTitulos">Barc0avenus</h5>
                     <img src="imagenes/body/5_3n.png" class="imgColaborador" alt="Barc0avenus">
@@ -245,7 +232,7 @@
     <!-- fin de la seccion 5 -->
 
     <!-- Footer -->
-    <footer class="container" id="Redes">
+    <footer class="container">
         <p class="choriTexto">@Todos los derechos reservados Cabechori</p>
         <div class="pie">
             <a href="https://www.youtube.com/channel/UCvzk0vg-ITwt7xpexi1MIZg?view_as=subscriber" target="_blank"><img src="imagenes/footer/youtubeprueba.png" alt="red social"></a>

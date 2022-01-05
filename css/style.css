@@ -24,18 +24,12 @@ h2 {
   padding: 20px;
 }
 
-.title {
-  font-family: "Roboto", sans-serif;
-  font-size: 60px;
-  color: white;
-  border-radius: 4px;
-}
-
+/* menu desplegable */
 .menuTexto {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #ffffff;
-  font-size: 22px;
+  font-size: 20px;
   margin: 10px;
   text-decoration: none;
 }
@@ -46,6 +40,7 @@ h2 {
   border-radius: 10px;
 }
 
+/* encabezados */
 .titulos {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
@@ -54,20 +49,23 @@ h2 {
   text-shadow: 2px 2px #FFFFFF;
   text-decoration: none;
 }
-
-.texto {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 30px;
-  color: #ffffff;
-  text-align: center;
+@media (max-width: 576px) {
+  .titulos {
+    font-size: 40px;
+  }
 }
 
+/* texto de las cards */
 .seccionTitulos {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-size: 30px;
   color: #ffffff;
+}
+@media (max-width: 576px) {
+  .seccionTitulos {
+    font-size: 25px;
+  }
 }
 
 .seccionTexto {
@@ -76,7 +74,47 @@ h2 {
   font-size: 20px;
   color: #ffffff;
 }
+@media (max-width: 576px) {
+  .seccionTexto {
+    font-size: 16px;
+  }
+}
 
+/* Texto del carousel */
+.titleChori {
+  flex-wrap: wrap;
+  color: white;
+  text-shadow: #FFE133 1px 3px 25px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 32px;
+}
+@media (max-width: 576px) {
+  .titleChori {
+    font-size: 24px;
+  }
+}
+
+.textChori {
+  color: white;
+  text-shadow: #FFE133 1px 3px 25px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+@media (max-width: 576px) {
+  .textChori {
+    font-size: 16px;
+  }
+}
+
+/* footer texto */
+.choriTexto {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+/* fin textos y titulos */
 /* header */
 .homeHeader {
   padding: 10px;
@@ -85,12 +123,13 @@ h2 {
   justify-content: start;
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
-
-.imgHeader {
+.homeHeader .imgHeader {
+  z-index: 1;
   transition: all 1s;
 }
-.imgHeader:hover {
+.homeHeader .imgHeader:hover {
   box-shadow: 0 1px 4px rgba(194, 50, 187, 0.8), -13px 0 10px -13px rgba(194, 50, 187, 0.8), 13px 0 10px -13px rgba(194, 50, 187, 0.8), inset 0 0 20px rgba(194, 50, 187, 0.8);
   border-radius: 50px;
   font-size: 50px;
@@ -98,6 +137,7 @@ h2 {
   -o-transform: scale(1.35) rotate(360deg);
   -moz-transform: scale(1.35) rotate(360deg);
   transform: scale(1.35) rotate(360deg);
+  z-index: 1;
 }
 
 ul {
@@ -131,20 +171,15 @@ ul li:hover ul {
   box-shadow: 0 1px 4px rgba(194, 50, 187, 0.8), -13px 0 10px -13px rgba(194, 50, 187, 0.8), 13px 0 10px -13px rgba(194, 50, 187, 0.8), inset 0 0 20px rgba(194, 50, 187, 0.8);
 }
 
-@media only screen and (max-width: 750px) {
-  .homeHeader {
-    display: none;
-  }
-}
 /* fin del header */
 /* extend */
-.sectionCuatro, .sectionTres, .sectionU, .sectionUno {
+.sectionCuatro, .sectionTres, .sectionContenido, .sectionUno {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-footer, .sectionCinco, .sectionCuatro, .sectionTres, .sectionDos, .sectionUno {
+footer, .sectionCinco, .choriContenedor, .sectionCuatro, .sectionTres, .sectionDos, .sectionUno {
   box-shadow: 0 1px 4px rgba(255, 255, 255, 0.8), -13px 0 10px -13px rgba(255, 255, 255, 0.8), 13px 0 10px -13px rgba(248, 245, 248, 0.8), inset 0 0 20px rgba(245, 241, 245, 0.8);
 }
 
@@ -163,17 +198,17 @@ footer, .sectionCinco, .sectionCuatro, .sectionTres, .sectionDos, .sectionUno {
   border-radius: 20px;
 }
 
-.sectionU {
+.sectionContenido {
   padding: 10px 0px;
   margin: 10px 0px 40px 0px;
   border-radius: 50px;
   align-items: flex-end;
 }
-.sectionU .btnChori {
+.sectionContenido .btnChori {
   position: absolute;
 }
 
-/* fin de la seccion uno */
+/* fin de la seccionUno */
 /* seccionDos */
 .sectionDos {
   padding: 20px 0px;
@@ -186,6 +221,7 @@ footer, .sectionCinco, .sectionCuatro, .sectionTres, .sectionDos, .sectionUno {
   border-radius: 30px;
 }
 
+/* boton */
 .btnChori {
   font-family: "trebuchet ms";
   color: #FFFFF5;
@@ -231,29 +267,18 @@ footer, .sectionCinco, .sectionCuatro, .sectionTres, .sectionDos, .sectionUno {
 }
 
 .cabeChori {
-  box-shadow: 0 1px 4px rgba(194, 50, 187, 0.8), -13px 0 10px -13px rgba(194, 50, 187, 0.8), 13px 0 10px -13px rgba(194, 50, 187, 0.8), inset 0 0 20px rgba(194, 50, 187, 0.8);
+  box-shadow: 0 1px 4px rgba(194, 50, 187, 0.8), -13px 0 10px -13px rgba(194, 50, 187, 0.8), 13px 0 10px -13px rgba(194, 50, 187, 0.8), inset 0 0 50px rgba(194, 50, 187, 0.8);
   border-radius: 30px;
-  background-color: rgba(194, 50, 187, 0.6);
+  background-color: rgba(122, 9, 101, 0.411);
 }
 
+/* seccionCuatro */
 .choriContenedor {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(17, 16, 16, 0.329);
   border-radius: 10px;
-}
-
-.titleChori {
-  flex-wrap: wrap;
-  color: black;
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-size: 32px;
-}
-
-.textChori {
-  color: black;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  font-size: 18px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
 }
 
 /* fin de seccionCuatro */
@@ -301,9 +326,7 @@ footer {
   justify-content: space-around;
   align-items: center;
 }
-footer .choriTexto {
-  color: #ffffff;
-  font-size: 14px;
-}
+
+/* fin del footer */
 
 /*# sourceMappingURL=style.css.map */

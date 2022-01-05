@@ -1,17 +1,34 @@
 /* seccionUno */
 .sectionUno {
-    padding: 15px 0px;
-    margin: 0px 0px 20px 0px;
+    padding: 10px 0px;
+    margin: 10px 0px 40px 0px;
     background-color: black;
+    border-radius: 50px;
     @extend %flex;
-    .imghome {
+    box-shadow: 0 1px 4px rgba(255, 255, 255, 0.8),
+        -13px 0 10px -13px rgba(255, 255, 255, 0.8),
+        13px 0 10px -13px rgba(248, 245, 248, 0.8),
+        inset 0 0 20px rgba(245, 241, 245, 0.8);
+    .imgHome {
         width: $img-width;
+        position: relative;
         margin: 0 10px 0 10px;
         box-shadow: 0 1px 4px rgba(194, 50, 187, 0.8),
                 -23px 0 20px -23px rgba(194, 50, 187, 0.8),
                 23px 0 20px -23px rgba(194, 50, 187, 0.8),
                 inset 0 0 40px rgba(194, 50, 187, 0.8);
-        border-radius: 20px;
+        border-radius: 20px;         
     }
 }   
+
+.sectionU {
+    padding: 10px 0px;
+    margin: 10px 0px 40px 0px;
+    border-radius: 50px;
+    @extend %flex; 
+    align-items: flex-end;
+    .btnChori {
+        position: absolute;
+    }
+}
 

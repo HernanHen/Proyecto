@@ -5,10 +5,7 @@
     margin: 40px auto;
     background: black;
     border-radius: 20px;
-    box-shadow: 0 1px 4px rgba(255, 255, 255, 0.8),
-        -13px 0 10px -13px rgba(255, 255, 255, 0.8),
-        13px 0 10px -13px rgba(248, 245, 248, 0.8),
-        inset 0 0 20px rgba(245, 241, 245, 0.8);
+    @extend %shadowSection;
     .shadowChori {
         box-shadow: 0 1px 4px rgba(194, 50, 187, 0.8),
         -13px 0 10px -13px rgba(194, 50, 187, 0.8),
@@ -17,8 +14,6 @@
         border-radius: 30px;
     }
 }
-
-
 
 .btnChori {
     font-family: 'trebuchet ms';
@@ -39,3 +34,4 @@
             background: linear-gradient(to top, #380F24, #DD3C8D);
         }
 }
+/* fin de la seccion 2 */

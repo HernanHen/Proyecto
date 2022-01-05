@@ -5,13 +5,36 @@
     margin: 40px auto;
     background: black;
     border-radius: 20px;
-    box-shadow: 0 1px 4px rgba(255, 255, 255, 0.8),
-        -13px 0 10px -13px rgba(255, 255, 255, 0.8),
-        13px 0 10px -13px rgba(248, 245, 248, 0.8),
-        inset 0 0 20px rgba(245, 241, 245, 0.8);
+    @extend %flex;
+    @extend %shadowSection;
 }
 
+.cabeChori {
+    box-shadow: 0 1px 4px rgba(194, 50, 187, 0.8),
+    -13px 0 10px -13px rgba(194, 50, 187, 0.8),
+    13px 0 10px -13px rgba(194, 50, 187, 0.8),
+    inset 0 0 20px rgba(194, 50, 187, 0.8);
+    border-radius: 30px;
+    background-color: rgba(194, 50, 187, 0.6);
+}
 
+.choriContenedor {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+}
 
+.titleChori {
+    flex-wrap: wrap;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 32px;
+}
+
+.textChori {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
 /* fin de seccionCuatro */
-

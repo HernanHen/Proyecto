@@ -20,6 +20,13 @@ h2 {
     color: $menu-texto;
     font-size: $text3;
     margin: 10px;
+    text-decoration: none;
+    &:hover {
+        background-color: rgba(194, 50, 187, 0.8);
+        color: $menu-texto;
+        padding: 5px 5px;
+        border-radius: 10px;
+    }
 }
 
 .titulos {

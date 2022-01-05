@@ -32,7 +32,7 @@ li {
     width: 25%;
     position: relative;
     font-size: 14px;
-    
+    top: 5px;
 }
 
 ul ul {
@@ -46,11 +46,15 @@ ul ul li {
 
 ul li:hover ul {
     display: block;
-    border-radius: 800px;
-    position: absolute;
-    
-    
-    
+    padding: 10px 10px;
+    margin: 10px 5px 0px 0px;
+    text-align: start;
+    border-radius: 30px;
+    background-color: rgba(109, 107, 107, 0.5);
+    box-shadow: 0 1px 4px rgba(194, 50, 187, 0.8),
+    -13px 0 10px -13px rgba(194, 50, 187, 0.8),
+    13px 0 10px -13px rgba(194, 50, 187, 0.8),
+    inset 0 0 20px rgba(194, 50, 187, 0.8);
 }
 
 @media only screen and (max-width: 750px) {

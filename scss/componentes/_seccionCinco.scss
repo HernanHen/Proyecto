@@ -1,16 +1,12 @@
 /* seccionCinco */
-
 .sectionCinco {
     padding: 50px 0px;
     margin: 40px auto;
     background-color: black;
     border-radius: 20px;
     align-items: center;
-    box-shadow: 0 1px 4px rgba(255, 255, 255, 0.8),
-        -13px 0 10px -13px rgba(255, 255, 255, 0.8),
-        13px 0 10px -13px rgba(248, 245, 248, 0.8),
-        inset 0 0 20px rgba(245, 241, 245, 0.8);
-    .shadowChori {
+    @extend %shadowSection;
+    .choriShadouw {
         box-shadow: 0 1px 4px rgba(194, 50, 187, 0.8),
         -13px 0 10px -13px rgba(194, 50, 187, 0.8),
         13px 0 10px -13px rgba(194, 50, 187, 0.8),
@@ -18,7 +14,6 @@
         border-radius: 50px;
     }
 }
-
 
 .btnChori {
     font-family: 'Roboto', sans-serif;
@@ -39,5 +34,4 @@
             box-shadow: 1px 1px 1px #6B2670;
         }
 }
-
 /* fin de seccionCinco */

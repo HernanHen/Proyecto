@@ -13,10 +13,11 @@ html {
 }
 
 body {
-  background-image: url("/css/img/body/11.jpg");
+  background-image: url("/css/img/body/11n.png");
   background-position: top;
 }
 
+/* fin del hmtl y body */
 /* Titulos y textos */
 h2 {
   text-align: center;
@@ -33,9 +34,16 @@ h2 {
 .menuTexto {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  color: black;
+  color: #ffffff;
   font-size: 22px;
   margin: 10px;
+  text-decoration: none;
+}
+.menuTexto:hover {
+  background-color: rgba(194, 50, 187, 0.8);
+  color: #ffffff;
+  padding: 5px 5px;
+  border-radius: 10px;
 }
 
 .titulos {
@@ -101,6 +109,7 @@ li {
   width: 25%;
   position: relative;
   font-size: 14px;
+  top: 5px;
 }
 
 ul ul {
@@ -114,8 +123,12 @@ ul ul li {
 
 ul li:hover ul {
   display: block;
-  border-radius: 800px;
-  position: absolute;
+  padding: 10px 10px;
+  margin: 10px 5px 0px 0px;
+  text-align: start;
+  border-radius: 30px;
+  background-color: rgba(109, 107, 107, 0.5);
+  box-shadow: 0 1px 4px rgba(194, 50, 187, 0.8), -13px 0 10px -13px rgba(194, 50, 187, 0.8), 13px 0 10px -13px rgba(194, 50, 187, 0.8), inset 0 0 20px rgba(194, 50, 187, 0.8);
 }
 
 @media only screen and (max-width: 750px) {
@@ -125,10 +138,14 @@ ul li:hover ul {
 }
 /* fin del header */
 /* extend */
-.sectionTres, .sectionU, .sectionUno {
+.sectionCuatro, .sectionTres, .sectionU, .sectionUno {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+footer, .sectionCinco, .sectionCuatro, .sectionTres, .sectionDos, .sectionUno {
+  box-shadow: 0 1px 4px rgba(255, 255, 255, 0.8), -13px 0 10px -13px rgba(255, 255, 255, 0.8), 13px 0 10px -13px rgba(248, 245, 248, 0.8), inset 0 0 20px rgba(245, 241, 245, 0.8);
 }
 
 /* seccionUno */
@@ -137,7 +154,6 @@ ul li:hover ul {
   margin: 10px 0px 40px 0px;
   background-color: black;
   border-radius: 50px;
-  box-shadow: 0 1px 4px rgba(255, 255, 255, 0.8), -13px 0 10px -13px rgba(255, 255, 255, 0.8), 13px 0 10px -13px rgba(248, 245, 248, 0.8), inset 0 0 20px rgba(245, 241, 245, 0.8);
 }
 .sectionUno .imgHome {
   width: 100%;
@@ -157,13 +173,13 @@ ul li:hover ul {
   position: absolute;
 }
 
+/* fin de la seccion uno */
 /* seccionDos */
 .sectionDos {
   padding: 20px 0px;
   margin: 40px auto;
   background: black;
   border-radius: 20px;
-  box-shadow: 0 1px 4px rgba(255, 255, 255, 0.8), -13px 0 10px -13px rgba(255, 255, 255, 0.8), 13px 0 10px -13px rgba(248, 245, 248, 0.8), inset 0 0 20px rgba(245, 241, 245, 0.8);
 }
 .sectionDos .shadowChori {
   box-shadow: 0 1px 4px rgba(194, 50, 187, 0.8), -13px 0 10px -13px rgba(194, 50, 187, 0.8), 13px 0 10px -13px rgba(194, 50, 187, 0.8), inset 0 0 20px rgba(194, 50, 187, 0.8);
@@ -190,20 +206,19 @@ ul li:hover ul {
   background: linear-gradient(to top, #380F24, #DD3C8D);
 }
 
+/* fin de la seccion 2 */
 /* seccionTres */
 .sectionTres {
   padding: 20px 0px;
   margin: 40px auto;
   background-color: black;
   border-radius: 20px;
-  box-shadow: 0 1px 4px rgba(255, 255, 255, 0.8), -13px 0 10px -13px rgba(255, 255, 255, 0.8), 13px 0 10px -13px rgba(248, 245, 248, 0.8), inset 0 0 20px rgba(245, 241, 245, 0.8);
 }
-.sectionTres .img {
+.sectionTres .imgBorder {
   width: 100%;
-  border: blueviolet 2px solid;
-  background-color: #521796;
-  overflow: hidden;
-  border-radius: 300px;
+  box-shadow: 0 1px 4px rgba(194, 50, 187, 0.8), -10px 0 10px -10px rgba(194, 50, 187, 0.8), 10px 0 10px -10px rgba(194, 50, 187, 0.8), inset 0 0 10px rgba(194, 50, 187, 0.8);
+  border-radius: 30px;
+  background-color: rgba(194, 50, 187, 0.2);
 }
 
 /* fin de seccionTres */
@@ -213,7 +228,32 @@ ul li:hover ul {
   margin: 40px auto;
   background: black;
   border-radius: 20px;
-  box-shadow: 0 1px 4px rgba(255, 255, 255, 0.8), -13px 0 10px -13px rgba(255, 255, 255, 0.8), 13px 0 10px -13px rgba(248, 245, 248, 0.8), inset 0 0 20px rgba(245, 241, 245, 0.8);
+}
+
+.cabeChori {
+  box-shadow: 0 1px 4px rgba(194, 50, 187, 0.8), -13px 0 10px -13px rgba(194, 50, 187, 0.8), 13px 0 10px -13px rgba(194, 50, 187, 0.8), inset 0 0 20px rgba(194, 50, 187, 0.8);
+  border-radius: 30px;
+  background-color: rgba(194, 50, 187, 0.6);
+}
+
+.choriContenedor {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+}
+
+.titleChori {
+  flex-wrap: wrap;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 32px;
+}
+
+.textChori {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 /* fin de seccionCuatro */
@@ -224,9 +264,8 @@ ul li:hover ul {
   background-color: black;
   border-radius: 20px;
   align-items: center;
-  box-shadow: 0 1px 4px rgba(255, 255, 255, 0.8), -13px 0 10px -13px rgba(255, 255, 255, 0.8), 13px 0 10px -13px rgba(248, 245, 248, 0.8), inset 0 0 20px rgba(245, 241, 245, 0.8);
 }
-.sectionCinco .shadowChori {
+.sectionCinco .choriShadouw {
   box-shadow: 0 1px 4px rgba(194, 50, 187, 0.8), -13px 0 10px -13px rgba(194, 50, 187, 0.8), 13px 0 10px -13px rgba(194, 50, 187, 0.8), inset 0 0 20px rgba(194, 50, 187, 0.8);
   border-radius: 50px;
 }
@@ -261,7 +300,6 @@ footer {
   border-radius: 20px;
   justify-content: space-around;
   align-items: center;
-  box-shadow: 0 1px 4px rgba(255, 255, 255, 0.8), -13px 0 10px -13px rgba(255, 255, 255, 0.8), 13px 0 10px -13px rgba(248, 245, 248, 0.8), inset 0 0 20px rgba(245, 241, 245, 0.8);
 }
 footer .choriTexto {
   color: #ffffff;

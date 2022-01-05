@@ -7,10 +7,7 @@ footer {
     border-radius: 20px;
     justify-content: space-around;
     align-items: center;
-    box-shadow: 0 1px 4px rgba(255, 255, 255, 0.8),
-        -13px 0 10px -13px rgba(255, 255, 255, 0.8),
-        13px 0 10px -13px rgba(248, 245, 248, 0.8),
-        inset 0 0 20px rgba(245, 241, 245, 0.8);
+    @extend %shadowSection;
     .choriTexto {
         color: #ffffff;
         font-size: 14px;

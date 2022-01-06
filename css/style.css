@@ -245,7 +245,7 @@ footer, .sectionCinco, .choriContenedor, .sectionCuatro, .sectionTres, .sectionD
 /* fin de la seccion 2 */
 /* seccionTres */
 .sectionTres {
-  padding: 20px 0px;
+  padding: 20px 10px;
   margin: 40px auto;
   background-color: black;
   border-radius: 20px;
@@ -254,7 +254,7 @@ footer, .sectionCinco, .choriContenedor, .sectionCuatro, .sectionTres, .sectionD
   width: 100%;
   box-shadow: 0 1px 4px rgba(194, 50, 187, 0.8), -10px 0 10px -10px rgba(194, 50, 187, 0.8), 10px 0 10px -10px rgba(194, 50, 187, 0.8), inset 0 0 10px rgba(194, 50, 187, 0.8);
   border-radius: 30px;
-  background-color: rgba(194, 50, 187, 0.2);
+  background-color: rgba(146, 33, 140, 0.308);
 }
 
 /* fin de seccionTres */
@@ -269,7 +269,7 @@ footer, .sectionCinco, .choriContenedor, .sectionCuatro, .sectionTres, .sectionD
 .cabeChori {
   box-shadow: 0 1px 4px rgba(194, 50, 187, 0.8), -13px 0 10px -13px rgba(194, 50, 187, 0.8), 13px 0 10px -13px rgba(194, 50, 187, 0.8), inset 0 0 50px rgba(194, 50, 187, 0.8);
   border-radius: 30px;
-  background-color: rgba(122, 9, 101, 0.411);
+  background-color: #52179646;
 }
 
 /* seccionCuatro */
